@@ -1,0 +1,43 @@
+@import "../helpers/fonts";
+.vacation-ideas {
+    max-width: 1400px;
+    h2 {
+        font-size: 48px;
+        font-weight: 400;
+        color: #171d1c;
+        padding-top: 190px;
+        padding-bottom: 70px;
+        text-align: center;
+    }
+    .items {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        .item {
+            width: 30%;
+            height: 30%;
+            position: relative;
+            text-align: center;
+            img {
+                overflow: hidden;
+            }    
+            p {
+                position: absolute;
+                top: 50%;
+                left: 15%;
+                right: 15%;
+                font-family: 'KeplerStd', sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                color: #454851;
+                background-color: #fff;
+                border: 1px solid #cccccc;
+                outline-offset:-4px;
+                padding-top: 25px;
+                padding-bottom: 30px;
+                text-align: center;
+            }
+        }
+    }
+}

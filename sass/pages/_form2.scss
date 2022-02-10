@@ -1,0 +1,46 @@
+@import "../helpers/fonts";
+.form2 {
+    display: block;
+    background-image: url("../../img/main/send-form/bungalow.jpg");
+    background-color: #3dafb0;
+	background-position: center 0;
+	background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 170px;
+    padding-left: 60%;
+    .form-holder {
+        width: 390px;
+        padding: 45px 45px 40px 45px;
+        background-color: #fff;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            h4 {
+                font-family: "ProximaNovaLight", sans-serif;
+                font-weight: 400;
+                font-size: 30px;
+                color: #1a1a1a;
+                margin-bottom: 40px;
+            }
+            input:not([type=button]) {
+                border: none;
+                border-bottom: 1px solid #999999;
+                height: 26px;
+                font-family: "ProximaNovaLight", sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                color: #999999;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+                input[type=button] {
+                    display: flex;
+                    width: 100px;
+                    height: 40px;
+                    padding-top: 60px;
+                }
+            }
+        }
+    }
+}

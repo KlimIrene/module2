@@ -1,0 +1,42 @@
+@import "../helpers/fonts";
+.footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #171d1c;
+    padding: 40px 170px 35px 110px;
+    text-decoration: none;
+    color: #ffffff;
+    .footer-box {
+        line-height: 1.5;
+    }
+
+    h5 {
+        font-family: 'ProximaNovaBold', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    ul {
+        font-family: 'ProximaNovaRegula', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+        li {
+            list-style-type: none;
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+    .destinations {
+        .colomns {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+        }
+    }
+    .contacts {
+        margin-left: 20%;
+        text-align: right;
+    }
+}

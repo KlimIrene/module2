@@ -1,0 +1,52 @@
+@import "../helpers/fonts";
+.checkin {
+    position: relative;
+    height: 0;
+    
+
+    .choose {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 70%;
+        top: -80px;
+        background-color: #fff;
+        color: #999999;
+        display: flex;
+        align-items: center;
+        padding: 58px 40px;
+        font-family: "ProximaNovaLight", sans-serif;
+        font-weight: 400;
+        form {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            font-family: inherit;
+       
+            input:not([type=button]), select {
+                width: 190px;
+                padding-bottom: 20px;
+                font-family: inherit;
+                color: inherit;
+                font-weight: 300;
+                font-size: 16px;
+                border: none;
+                border-bottom: 1px solid #999999;
+                appearance: none;
+                background-color: #fff;
+            }
+            input[type=date]::-webkit-calendar-picker-indicator {
+                opacity: 0;
+            }
+            .btn {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: transparent;
+                background-color: #f31131;
+            }
+            
+        }
+    }
+}

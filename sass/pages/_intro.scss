@@ -1,0 +1,20 @@
+@import "../helpers/fonts";
+.intro {
+    display: block;
+    background-image: url("../../img/main/enjoy-freedom/mountains-and-beach.jpg");
+    background-color: #3dafb0;
+	background-position: center 0;
+	background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+  .title {
+      text-transform: uppercase;
+      font-size: 60px;
+      padding: 315px 0;
+      color: #ffffff;
+      font-family: 'ProximaNovaExtraBold', sans-serif;
+      font-weight: 800;
+      font-size: 60px;
+  }
+}

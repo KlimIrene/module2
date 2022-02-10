@@ -1,0 +1,28 @@
+@import "../helpers/fonts";
+.header {
+    font-family: 'ProximaNovaBold', sans-serif;
+    font-weight: 700;
+    background-color: #fff;
+   
+    padding: 15px 0;
+    .content {
+        width: 100%;
+        max-width: 1400px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #454851;
+}
+a:visited {
+    color: #5c6211;
+}
+
+    .svg-private-holidays {
+        cursor: pointer;
+    }
+}
