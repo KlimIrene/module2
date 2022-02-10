@@ -294,6 +294,9 @@ body {
      -moz-appearance: none;
           appearance: none;
   background-color: #fff;
+  background: url(../../img/main/choose-date/arrow-down.png) no-repeat;
+  background-size: 15px;
+  background-position: 98% 10%;
 }
 
 .checkin .choose form input[type=date]::-webkit-calendar-picker-indicator {
@@ -335,6 +338,7 @@ body {
 
 .vacation-ideas {
   max-width: 1400px;
+  text-align: center;
 }
 
 .vacation-ideas h2 {
@@ -361,7 +365,7 @@ body {
 
 .vacation-ideas .items .item {
   width: 30%;
-  height: 30%;
+  height: 300px;
   position: relative;
   text-align: center;
 }
@@ -380,8 +384,6 @@ body {
   font-size: 24px;
   color: #454851;
   background-color: #fff;
-  border: 1px solid #cccccc;
-  outline-offset: -4px;
   padding-top: 25px;
   padding-bottom: 30px;
   text-align: center;
@@ -438,21 +440,13 @@ body {
   margin: 0 130px;
 }
 
+.why-we .holder h3 {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
 .why-we .holder .why {
   width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .why-we .holder .why p {
@@ -535,13 +529,18 @@ body {
   margin-bottom: 30px;
 }
 
-.form2 .form-holder form input:not([type=button]) input[type=button] {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.form2 .form-holder form input[type=button] {
   width: 100px;
   height: 40px;
-  padding-top: 60px;
+  margin-top: 60px;
+  font-family: "ProximaNovaLight", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f31131;
+  border-radius: 20px;
+  border: none;
 }
 
 @font-face {
@@ -602,7 +601,7 @@ body {
   text-decoration: none;
 }
 
-.footer ul li {
+.footer ul li a {
   list-style-type: none;
   text-decoration: none;
   color: #ffffff;
@@ -618,12 +617,37 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 15px;
+  gap: 50px;
 }
 
 .footer .contacts {
   margin-left: 20%;
   text-align: right;
+  font-family: 'ProximaNovaRegula', sans-serif;
+  font-weight: 400;
+}
+
+.footer .contacts .phone {
+  margin-bottom: 35px;
+}
+
+.footer .contacts p {
+  font-size: 14px;
+}
+
+.footer .contacts p a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer .contacts address {
+  font-style: normal;
+  color: #ffffff;
+}
+
+.footer .contacts address h6 {
+  font-size: 16px;
 }
 
 address {

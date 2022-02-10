@@ -10,7 +10,6 @@
     .footer-box {
         line-height: 1.5;
     }
-
     h5 {
         font-family: 'ProximaNovaBold', sans-serif;
         font-size: 16px;
@@ -22,9 +21,11 @@
         font-weight: 400;
         text-decoration: none;
         li {
-            list-style-type: none;
-            text-decoration: none;
-            color: #ffffff;
+            a {
+                list-style-type: none;
+                text-decoration: none;
+                color: #ffffff;
+            }
         }
     }
     .destinations {
@@ -32,11 +33,31 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            gap: 15px;
+            gap: 50px;
         }
     }
     .contacts {
         margin-left: 20%;
         text-align: right;
+        font-family: 'ProximaNovaRegula', sans-serif;
+        font-weight: 400;
+        .phone {
+            margin-bottom: 35px;
+        } 
+        p {
+            font-size: 14px;
+            a {
+                list-style-type: none;
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+        address {
+            font-style: normal;
+            color: #ffffff;
+            h6 {
+                font-size: 16px;
+            }
+        }
     }
 }

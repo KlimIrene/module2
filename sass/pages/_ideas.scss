@@ -1,6 +1,7 @@
 @import "../helpers/fonts";
 .vacation-ideas {
     max-width: 1400px;
+    text-align: center;
     h2 {
         font-size: 48px;
         font-weight: 400;
@@ -16,7 +17,7 @@
         max-width: 1400px;
         .item {
             width: 30%;
-            height: 30%;
+            height: 300px;
             position: relative;
             text-align: center;
             img {
@@ -32,8 +33,7 @@
                 font-size: 24px;
                 color: #454851;
                 background-color: #fff;
-                border: 1px solid #cccccc;
-                outline-offset:-4px;
+                // border: 1px solid #cccccc;
                 padding-top: 25px;
                 padding-bottom: 30px;
                 text-align: center;

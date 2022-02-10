@@ -23,7 +23,7 @@
             width: 100%;
             justify-content: space-between;
             font-family: inherit;
-       
+
             input:not([type=button]), select {
                 width: 190px;
                 padding-bottom: 20px;
@@ -35,6 +35,9 @@
                 border-bottom: 1px solid #999999;
                 appearance: none;
                 background-color: #fff;
+                background: url(../../img/main/choose-date/arrow-down.png) no-repeat;
+                background-size: 15px;
+                background-position: 98% 10%;
             }
             input[type=date]::-webkit-calendar-picker-indicator {
                 opacity: 0;
@@ -45,6 +48,7 @@
                 border-radius: 50%;
                 border: transparent;
                 background-color: #f31131;
+                // background: url(../../img/main/choose-date/arrow.png) no-repeat;
             }
             
         }
