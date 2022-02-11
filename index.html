@@ -37,14 +37,14 @@
             <section class="checkin">
                 <div class="choose">
                     <form action="#">
-                        <select type="text" value="places">
+                        <select type="text" class="places" value="places">
                             <option value="Mauritius">Mauritius</option>
                             <option value="Maldives">The Maldives</option>
                             <option value="BoraBora">Bora Bora, French Polynesia</option>
                         </select>
-                        <input type="date" name="check-in">
-                        <input type="date" name="check-out">
-                        <select type="button" value="rooms">
+                        <input type="date" class="check-in" name="check-in">
+                        <input type="date" class="check-out" name="check-out">
+                        <select type="button" class="rooms" value="rooms">
                             <option value="5">5 Bedrooms</option>
                             <option value="4">4 Bedrooms</option>
                             <option value="3">3 Bedrooms</option>
@@ -104,7 +104,7 @@
                         <input type="text" name="Your name" placeholder="Your name">
                         <input type="email" name="Email" placeholder="Email">
                         <input type="text" name="Message" placeholder="Message">
-                        <div class="check-holder"></div>    
+                        <div id="check-holder"></div>    
                         <input type="button" class="send" value="Send">
                     </form>
                 </div>
