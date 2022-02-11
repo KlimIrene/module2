@@ -15,7 +15,7 @@
         justify-content: space-between;
         text-align: center;
         height: 240px;
-        margin: 0 130px;
+        margin: 0 12%;
         h3 {
             padding-top: 25px;
             padding-bottom: 20px;
@@ -33,5 +33,23 @@
                 line-height: 1.2;
             }
          }
+    }
+}
+@media screen and (max-width: 768px) {
+    .why-we {
+        padding-bottom: 140px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .why-we {
+        padding-bottom: 600px;
+        .holder {
+            flex-direction: column;
+            align-items: center;
+            .why {
+                margin-top: 5%;
+                width: 100%;
+            }
+        }
     }
 }

@@ -2,8 +2,6 @@
 .checkin {
     position: relative;
     height: 0;
-    
-
     .choose {
         position: absolute;
         left: 0;
@@ -25,7 +23,7 @@
             font-family: inherit;
 
             input:not([type=button]), select {
-                width: 190px;
+                width: 22%;
                 padding-bottom: 20px;
                 font-family: inherit;
                 color: inherit;
@@ -38,9 +36,11 @@
                 background: url(../../img/main/choose-date/arrow-down.png) no-repeat;
                 background-size: 15px;
                 background-position: 98% 10%;
+                cursor: pointer;
             }
             input[type=date]::-webkit-calendar-picker-indicator {
                 opacity: 0;
+                cursor: pointer;
             }
             .btn {
                 width: 40px;
@@ -49,8 +49,47 @@
                 border: transparent;
                 background-color: #f31131;
                 // background: url(../../img/main/choose-date/arrow.png) no-repeat;
+                cursor: pointer;
             }
-            
+            .btn:hover {
+                background-color: #d4102a;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .checkin {
+        .choose {
+            form {
+                padding: 20px 40px;
+                flex-direction: column;
+
+                input:not([type=button]), select {
+                    width: 90%;
+                    text-align: center;
+                    margin: 2% auto;
+                }
+            .button {
+                margin: 2% 10% 5% auto;
+                .btn {
+                    width: 80px;
+                    border-radius: 20px;
+                }
+            }
+            }
+        } 
+    }
+}
+@media screen and (max-width: 375px) {
+    .checkin {
+        .choose {
+            padding: 5px;
+            form {
+                padding: 0;
+                .button {
+                    margin: 2% auto;
+                }
+            } 
         }
     }
 }

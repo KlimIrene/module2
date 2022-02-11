@@ -26,3 +26,19 @@ a:visited {
         cursor: pointer;
     }
 }
+@media screen and (max-width: 700px) {
+    .header {
+        a:nth-child(1) {
+            display: none;
+        }
+        a:nth-child(2) {
+            display: none;
+        }
+        a:nth-child(4) {
+            display: none;
+        }
+        a:nth-child(5) {
+            display: none;
+        }
+    }
+}

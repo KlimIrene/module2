@@ -1,62 +1,111 @@
 @import "../helpers/fonts";
-.footer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+footer {
     background-color: #171d1c;
-    padding: 40px 170px 35px 110px;
-    text-decoration: none;
-    color: #ffffff;
-    .footer-box {
-        line-height: 1.5;
-    }
-    h5 {
-        font-family: 'ProximaNovaBold', sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-    }
-    ul {
-        font-family: 'ProximaNovaRegula', sans-serif;
-        font-size: 14px;
-        font-weight: 400;
+    .footer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    
+        padding-top: 40px;
+        padding-bottom: 35px;
+        margin: 0 12%;
         text-decoration: none;
-        li {
-            a {
-                list-style-type: none;
-                text-decoration: none;
-                color: #ffffff;
-            }
+        color: #ffffff;
+        .footer-box {
+            line-height: 1.5;
+            margin-right: 1%;
         }
-    }
-    .destinations {
-        .colomns {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 50px;
+        h5 {
+            font-family: 'ProximaNovaBold', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
         }
-    }
-    .contacts {
-        margin-left: 20%;
-        text-align: right;
-        font-family: 'ProximaNovaRegula', sans-serif;
-        font-weight: 400;
-        .phone {
-            margin-bottom: 35px;
-        } 
-        p {
+        ul {
+            font-family: 'ProximaNovaRegula', sans-serif;
             font-size: 14px;
-            a {
-                list-style-type: none;
-                text-decoration: none;
-                color: #ffffff;
+            font-weight: 400;
+            text-decoration: none;
+            li {
+                a {
+                    list-style-type: none;
+                    text-decoration: none;
+                    color: #ffffff;
+                }
             }
         }
-        address {
-            font-style: normal;
-            color: #ffffff;
-            h6 {
-                font-size: 16px;
+        .information, .experiences, .themes {
+            width: 14%;
+        }
+        .destinations {
+            width: 29%;
+            .colomns {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 20%;
+            }
+        }
+        .contacts {
+            margin-left: 20%;
+            text-align: right;
+            font-family: 'ProximaNovaRegula', sans-serif;
+            font-weight: 400;
+            width: 24%;
+            .phone {
+                margin-bottom: 35px;
+            } 
+            p {
+                font-size: 14px;
+                a {
+                    list-style-type: none;
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+            }
+            address {
+                font-style: normal;
+                color: #ffffff;
+                h6 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    footer {
+        .footer {
+            .footer-box {
+                width: 25%;
+            }
+            .contacts {
+                margin-left: 13%;
+            }
+            .destinations {
+                width: 28%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 690px) {
+    footer {
+        .footer {
+            flex-wrap: wrap;
+            .footer-box {
+                margin-top: 5%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    footer {
+        .footer {
+            flex-direction: column;
+            .footer-box {
+                width: 100%;
+            }
+            .contacts {
+                margin-left: 3%;
             }
         }
     }
