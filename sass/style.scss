@@ -17,9 +17,40 @@ body {
     margin: auto;
 }
 @import "layout/header";
+.header {
+    font-family: 'ProximaNovaBold', sans-serif;
+}
 @import "pages/intro";
+.intro {
+    display: block;
+    background-image: url("/img/main/enjoy-freedom/mountains-and-beach.jpg");
+    .title {
+        font-family: 'ProximaNovaExtraBold', sans-serif;
+    }
+}
 @import "pages/checkin";
+.checkin {
+    .choose {
+        font-family: "ProximaNovaLight", sans-serif;
+    }
+}
 @import "pages/ideas";
+
 @import "pages/why";
+.why-we {
+    h2 {
+        font-family: 'ProximaNovaRegular', sans-serif;
+    }
+        .why {
+            p {
+                font-family: 'ProximaNovaLight', sans-serif;
+            }
+         }
+    }
 @import "pages/form2";
+.form2 {
+    display: block;
+    background-image: url("/img/main/send-form/bungalow.jpg");
+    font-family: "ProximaNovaLight", sans-serif;
+}
 @import "layout/footer";

@@ -141,7 +141,6 @@ body {
 }
 
 .header {
-  font-family: 'ProximaNovaBold', sans-serif;
   font-weight: 700;
   background-color: #fff;
   padding: 15px 0;
@@ -190,6 +189,10 @@ body {
   }
 }
 
+.header {
+  font-family: 'ProximaNovaBold', sans-serif;
+}
+
 @font-face {
   font-family: 'KeplerStd';
   src: url("../../fonts/KeplerStd/KeplerStd-BoldDisp.eot?") format("eot"), url("../../fonts/KeplerStd/KeplerStd-BoldDisp.ttf") format("truetype"), url("../../fonts/KeplerStd/KeplerStd-BoldDisp.woff") format("woff");
@@ -217,7 +220,6 @@ body {
 
 .intro {
   display: block;
-  background-image: url("../../img/main/enjoy-freedom/mountains-and-beach.jpg");
   background-color: #3dafb0;
   background-position: center 0;
   background-size: cover;
@@ -230,9 +232,17 @@ body {
   font-size: 60px;
   padding: 315px 0;
   color: #ffffff;
-  font-family: 'ProximaNovaExtraBold', sans-serif;
   font-weight: 800;
   font-size: 60px;
+}
+
+.intro {
+  display: block;
+  background-image: url("/img/main/enjoy-freedom/mountains-and-beach.jpg");
+}
+
+.intro .title {
+  font-family: 'ProximaNovaExtraBold', sans-serif;
 }
 
 @font-face {
@@ -281,7 +291,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 58px 40px;
-  font-family: "ProximaNovaLight", sans-serif;
   font-weight: 400;
 }
 
@@ -367,6 +376,10 @@ body {
   }
 }
 
+.checkin .choose {
+  font-family: "ProximaNovaLight", sans-serif;
+}
+
 @font-face {
   font-family: 'KeplerStd';
   src: url("../../fonts/KeplerStd/KeplerStd-BoldDisp.eot?") format("eot"), url("../../fonts/KeplerStd/KeplerStd-BoldDisp.ttf") format("truetype"), url("../../fonts/KeplerStd/KeplerStd-BoldDisp.woff") format("woff");
@@ -395,6 +408,8 @@ body {
 .vacation-ideas {
   max-width: 1400px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .vacation-ideas h2 {
@@ -445,16 +460,22 @@ body {
           transform: scale(1.2);
 }
 
-.vacation-ideas .items .item p {
+.vacation-ideas .items .item .item-border {
+  padding: 7px;
+  background-color: #fff;
   position: absolute;
   top: 50%;
   left: 15%;
   right: 15%;
+}
+
+.vacation-ideas .items .item .item-border p {
   font-family: 'KeplerStd', sans-serif;
   font-weight: 700;
   font-size: 24px;
   color: #454851;
   background-color: #fff;
+  border: 1px solid #cccccc;
   padding-top: 8%;
   padding-bottom: 10%;
   text-align: center;
@@ -517,7 +538,6 @@ body {
 
 .why-we h2 {
   text-align: center;
-  font-family: 'ProximaNovaRegular', sans-serif;
   font-weight: 400;
   font-size: 48px;
   color: #171d1c;
@@ -547,7 +567,6 @@ body {
 }
 
 .why-we .holder .why p {
-  font-family: 'ProximaNovaLight', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.2;
@@ -578,6 +597,14 @@ body {
   }
 }
 
+.why-we h2 {
+  font-family: 'ProximaNovaRegular', sans-serif;
+}
+
+.why-we .why p {
+  font-family: 'ProximaNovaLight', sans-serif;
+}
+
 @font-face {
   font-family: 'KeplerStd';
   src: url("../../fonts/KeplerStd/KeplerStd-BoldDisp.eot?") format("eot"), url("../../fonts/KeplerStd/KeplerStd-BoldDisp.ttf") format("truetype"), url("../../fonts/KeplerStd/KeplerStd-BoldDisp.woff") format("woff");
@@ -605,8 +632,7 @@ body {
 
 .form2 {
   display: block;
-  background-image: url("../../img/main/send-form/bungalow.jpg");
-  background-color: #3dafb0;
+  background: url("../../img/main/send-form/bungalow.jpg") no-repeat #3dafb0;
   background-position: center 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -632,7 +658,6 @@ body {
 }
 
 .form2 .form-holder form h4 {
-  font-family: "ProximaNovaLight", sans-serif;
   font-weight: 400;
   font-size: 30px;
   color: #1a1a1a;
@@ -643,7 +668,6 @@ body {
   border: none;
   border-bottom: 1px solid #999999;
   height: 26px;
-  font-family: "ProximaNovaLight", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #999999;
@@ -652,11 +676,23 @@ body {
   cursor: pointer;
 }
 
+.form2 .form-holder form .my-choice .choice {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24%;
+  font-weight: 400;
+  font-size: 16px;
+  color: #999999;
+}
+
 .form2 .form-holder form input[type=button] {
   width: 100px;
   height: 40px;
   margin-top: 60px;
-  font-family: "ProximaNovaLight", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
@@ -681,6 +717,12 @@ body {
   .form2 {
     padding-left: 20%;
   }
+}
+
+.form2 {
+  display: block;
+  background-image: url("/img/main/send-form/bungalow.jpg");
+  font-family: "ProximaNovaLight", sans-serif;
 }
 
 @font-face {

@@ -42,12 +42,12 @@
                             <option value="Maldives">The Maldives</option>
                             <option value="BoraBora">Bora Bora, French Polynesia</option>
                         </select>
-                        <input type="date" class="check-in" name="check-in">
-                        <input type="date" class="check-out" name="check-out">
+                        <input type="date" class="check-in" value="check-in">
+                        <input type="date" class="check-out" value="check-out">
                         <select type="button" class="rooms" value="rooms">
-                            <option value="5">5 Bedrooms</option>
-                            <option value="4">4 Bedrooms</option>
-                            <option value="3">3 Bedrooms</option>
+                            <option value="5 Bedrooms">5 Bedrooms</option>
+                            <option value="4 Bedrooms">4 Bedrooms</option>
+                            <option value="3 Bedrooms">3 Bedrooms</option>
                         </select>
                         <div class="button">
                             <input type="button" class="btn">
@@ -59,17 +59,19 @@
             <section class="vacation-ideas">
                 <h2>See latest vacation ideas</h2>
                 <div class="items">
-                    <div class="item item1">
-                        <img src="img/main/vacation-ideas/Beachfront-Escapes.jpg" alt="beachfront">
-                        <p>Beachfront Escapes</p>
-                    </div>
+                    
+                        <div class="item item1">
+                            <img src="img/main/vacation-ideas/Beachfront-Escapes.jpg" alt="beachfront">
+                            <div class="item-border"><p>Beachfront Escapes</p></div>
+                        </div>
+                    
                     <div class="item item2">
                         <img src="img/main/vacation-ideas/Group-Holidays.jpg" alt="group">
-                        <p>Group Holidays</p>
+                        <div class="item-border"><p>Group Holidays</p></div>
                     </div>
                     <div class="item item3">
                         <img src="img/main/vacation-ideas/City-Breaks.jpg" alt="city">
-                        <p>City Breaks</p>
+                        <div class="item-border"><p>City Breaks</p></div>
                     </div>
                 </div>
             </section>
@@ -104,7 +106,12 @@
                         <input type="text" name="Your name" placeholder="Your name">
                         <input type="email" name="Email" placeholder="Email">
                         <input type="text" name="Message" placeholder="Message">
-                        <div id="check-holder"></div>    
+                        <div class="my-choice">
+                            <div class="choice" id="check-holder1"></div>
+                            <div class="choice" id="check-holder2"></div>    
+                            <div class="choice" id="check-holder3"></div>    
+                            <div class="choice" id="check-holder4"></div>
+                        </div>    
                         <input type="button" class="send" value="Send">
                     </form>
                 </div>
