@@ -318,7 +318,7 @@ body {
      -moz-appearance: none;
           appearance: none;
   background-color: #fff;
-  background: url(../img/main/choose-date/arrow-down.png) no-repeat;
+  background: url(~/../../img/main/choose-date/arrow-down.png) no-repeat;
   background-size: 15px;
   background-position: 98% 10%;
   cursor: pointer;
@@ -721,7 +721,7 @@ body {
 
 .form2 {
   display: block;
-  background-image: url("../img/main/send-form/bungalow.jpg");
+  background-image: url("~/../img/main/send-form/bungalow.jpg");
   font-family: "ProximaNovaLight", sans-serif;
 }
 
